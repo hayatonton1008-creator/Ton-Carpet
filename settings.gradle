@@ -10,4 +10,4 @@ pluginManagement {
 }
 
 // Should match your modid
-rootProject.name = 'cos-carpet'
+rootProject.name = 'carpet-mod'
