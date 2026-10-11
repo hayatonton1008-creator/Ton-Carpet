@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "ton-carpet",
+	"version": "${version}",
+	"name": "Ton Carpet",
+	"description": "A Carpet Mod addon that adds autonomous bot mining and building via /player, plus utility commands and rules.",
+	"authors": [
+		"tontonton0502"
+	],
+	"contact": {
+		"homepage": "https://github.com/hayatonton1008-creator/Ton-Carpet",
+		"sources": "https://github.com/hayatonton1008-creator/Ton-Carpet",
+		"issues": "https://github.com/hayatonton1008-creator/Ton-Carpet/issues"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/ton-carpet/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.toncarpet.TonCarpet"
+		],
+		"client": [
+			"com.toncarpet.client.TonCarpetClient"
+		]
+	},
+	"mixins": [
+		"ton-carpet.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*",
+		"carpet": "*"
+	},
+	"custom": {
+		"modmenu": {
+			"parent": "carpet"
+		}
+	}
+}

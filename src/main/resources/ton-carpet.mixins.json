@@ -1,0 +1,21 @@
+{
+	"required": true,
+	"package": "com.toncarpet.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"ActionPackStopMixin",
+		"ArmorStandSeatMixin",
+		"BlockPopResourceMixin",
+		"FireBlockMixin",
+		"PlayerCommandBuildMixin",
+		"PlayerCommandMineMixin",
+		"TrialSpawnerStateMixin",
+		"VaultServerDataMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}
