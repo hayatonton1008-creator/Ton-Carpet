@@ -3,6 +3,15 @@ plugins {
 	id 'maven-publish'
 }
 
+// jarのファイル名を「toncarpet-v1.0.0-mc1.21.11.jar」の形にする
+base {
+	archivesName = project.archives_base_name
+}
+
+tasks.withType(AbstractArchiveTask).configureEach {
+	archiveVersion = "v${project.version}-mc${project.minecraft_version}"
+}
+
 repositories {
 	// Add repositories to retrieve artifacts from in here.
 	// You should only use this when depending on other mods because
@@ -28,7 +37,7 @@ loom {
 	splitEnvironmentSourceSets()
 
 	mods {
-		"carpet-mod" {
+		"ton-carpet" {
 			sourceSet sourceSets.main
 			sourceSet sourceSets.client
 		}
